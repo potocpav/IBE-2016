@@ -1,0 +1,78 @@
+
+1 bod -  monoalfabetická substituce s posunem, úplná tabulka bez hesla
+2 body - afinní šifra
+3 body - monoalfabetická substituce s heslem, Vigenérova šifra
+4 body - úplná tabulka s heslem, dvojnásobná transpozice
+5 body - libovolná  monoalfabetická substituce + tabulka bez hesla či s heslem
+7 bodů - libovolná monoalfabetická substituce + dvojnásobná tabulka bez hesla
+
+# Cipher 0 (Shift: a=4)
+LOOKASSADWASPOINTINGATTHEGIGANTICFIGUREINTHESTOCKREVENUELINEWHATDOYOUTHINK
+Look, Assad was pointing at the gigantic figure in the stock revenue line. What do you think?
+
+# Cipher 1 (Affine: a=5, b=2)
+HEWASTHEONLYMEMBEROFTHEBOARDINGSCHOOLGANGWHOATTENDEDONASCHOLARSHIP
+YOUCANSEETHATHEWASQUITEDIFFERENTFROMTHEOTHERSTAKEALOOKHETURNEDTHEPAGESBACK
+He was the only member of the boarding school gang who attended on a scholarship.
+You can see that he was quite different from the others. Take a look. He turned the pages back.
+
+# Cipher 2 (Substitution: Scuba => SCUBADEFGHIJKLMNOPQRTVWXYZ)
+# NOTE: Decryption yielded slightly different Suce (5 substitutions wrong). Had to be corrected manually.
+ITWASABOUTBEINGTHEIROWNMASTERSANDDEFYINGTHEAUTHORITIESINTHEBIGGESTWAYPOSSIBLEANDSMOKING
+HASHRIGHTNEXTTOTHEBOARDINGSCHOOLWASPRETTYMUCHTHEWORSTYOUCOULDDOSOTHEYPASSEDTHEPIPE
+AROUNDANDMOCKEDTHETEACHERSTRYINGTOOUTDOEACHOTHERIMAGININGWHATTHEYWOULDDOTOTHEMIFTHEYCOULD
+It was about being their own masters and defying the authorities in the biggest way possible. And smoking
+hash right next to the boarding school was pretty much the worst you could do. So they passed the pipe
+around and mocked the teachers, trying to outdo each other, imagining what they would do to them if they could.
+
+# Cipher 3 (Vigenere: Salmon)
+SHETOOWASLAUGHINGLIKEALUNATICTHISSHITWASSOMEOFTHEBESTTHEYDEVERHADIMTELLINGTHE
+HEADMASTERTHEBOYSCREAMEDATTHEMNOTICINGTOOLATEHOWQUICKLYTHEOLDERSTUDENTSLAUGHTER
+FELLSILENTASPRIGHTLYBOYWHOWASUSEDTOTAUNTINGOTHERSHECOULDHAVEEASILYOUTRUNTHEM
+GIVENHOWLOADEDTHEYWEREBUTTHETHICKETWASOVERGROWNANDTHEDANGERHEDPUTTHEMINTOOGREAT
+FORTHEMTOLETTHATHAPPEN
+She too was laughing like a lunatic. This shit was some of the best they'd ever had. "I'm telling the
+headmaster", the boy screamed at them, noticing too late how quickly the older students' laughter
+fell silent. A sprightly boy who was used to taunting others, he could have easily outrun them,
+given how loaded they were, but the thicket was overgrown and the danger he'd put them in too great
+for them to let that happen.
+
+# Cipher 4 (Table: 10 rows, 9 cols)
+LETGOOFMEYOUIDIOTTHEYHESITATEDTHEBOYHADMADELIFETERRIBLYDIFFICULTFORMANYOFHISCLASSMATESXXXX
+"Let go of me, you idiot."
+They hesitated. The boy had made life terribly difficult for many of his classmates.
+
+# Cipher 5 (PassTable: 19 rows, 7 cols, [2,0,5,1,3,6,4])
+TWENTYTHOUSANDKRONERTHEBOYSNORTEDMOCKINGLYALLIHAVETODOISPHONEMYFATHERONCEANDHELL
+SENDMEDOUBLETHATAMOUNTTHENHESPATINKRISTIANSFACEXXXXXX
+Twenty thousand kroner. The boy snorted mockingly. All I have to do is phone my father once and he'll
+send me double that amount. Then he spat in Kristian's face.
+
+# Cipher 6 (DTable 6 rows, 47 cols both)
+ORWECANHOLDYOUUNDERWATERINTHESTREAMORWECANLETYOUGOANDGIVEYOUTHETWENTYTHOUSAND
+KRONERTOKEEPYOURMOUTHSHUTIFYOUGOBACKNOWANDTELLEVERYONEYOUFELLTHEYLLBELIEVEYOU
+WHATDOYOUSAYYOULITTLESHITTHEBOYDIDNTRESPONDDITLEVWENTANDSTOODRIGHTOVERHIMCURIOUS
+SEARCHINGTHELITTLEBASTARDSREACTIONFASCINATEDHIMX
+Or we can hold you underwater in the stream, or we can let you go and give you the twenty thousand
+kroner to keep your mouth shut. If you go back now and tell everyone, you fell they'll believe you.
+What do you say, you little shit? The boy didn't respond. Ditlev went and stood right over him, curious.
+Searching the little bastard's reaction fascinated him.
+
+################################################################################
+# Combined ciphers
+
+# Cipher 7 (Pair (Table 9 11) (Offset 1))
+INFACTHENEVERRETURNEDACCORDINGTORUMOURHISFATHERTOOKHIMBACKTOHONGKONGBUTTHATMIGHTNOTHAVEBEENTRUEWWWW
+In fact, he never returned. According to rumour, his father took him back to Hong Kong, but that might not have been true.
+
+# Cipher 8
+THEMANORHADBEENCONSTRUCTEDUSINGVASTSUMSEARNEDINTHECOFFEETRADEDITLEVPRAMHADINSTANTLYRECOGNIZEDTHEBUILDINGSPOTENTIAL
+The manor had been constructed using vast sums earned in the coffee trade. Ditlev Pram had instantly recognized the building's potential.
+
+# Cipher 9 (Substitution: Biology => BIOLGYACDEFHJKMNPQRSTUVWXZ + PassTable: 35 rows, 7 cols, [0,2,4,3,5,1,6])
+BYNOWHISEMPIREHADEXPANDEDTOINCLUDESIXTEENHOSPITALSWITHFOURNEWONESONTHEDRAWINGBOARD
+HEWASMAKINGGOODPROGRESSTOWARDSREALIZINGHISAMBITIONTOCHANNELFIFTEENPERCENTOFTHEPROFITS
+FROMALLOFNORTHERNEUROPESBREASTIMPLANTOPERATIONSANDFACELIFTSINTOHISACCOUNTYYYYY
+By now, his empire had expanded to include sixteen hospitals with four new ones on the drawing board.
+He was making good progress towards realizing his ambition to channel fifteen percent of the profits
+from all of northern Europe's breast implant operations and face lifts into his account.
